@@ -1,14 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
+import Api from './Api';
 import './App.css';
 import SearchAppBar from './components/navbar';
 
 
 function App() {
   return (
-    <div className="App">
-      <SearchAppBar />
+    <div className="App" style={{ background: '#243859' }}>
 
+      <SearchAppBar />
+      <Api />
     </div>
   );
 }
