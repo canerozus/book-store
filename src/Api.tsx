@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react'
 
 
 
-const url = `https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=RR5gU5x7yoqJlYOMPcTexK560Ei7eofG`
+const url = `https://example-data.draftbit.com/books?_limit=250`
 const Api = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
         const fetchBooks = async () => {
             const res = await axios.get(url)
-            setBooks(res.data.results.books)
+            setBooks(res.data)
             console.log(res.data)
         }
         fetchBooks()
