@@ -1,6 +1,8 @@
 import Api from './Api';
 import './App.css';
 import SearchAppBar from './components/navbar';
+import searchFilter from './components/searchFilter';
+
 
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
 
       <SearchAppBar />
       <Api />
+      
     </div>
   );
 }
