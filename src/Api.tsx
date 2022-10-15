@@ -11,11 +11,11 @@ const Api = () => {
         const fetchBooks = async () => {
             const res = await axios.get(url)
             setBooks(res.data)
-            console.log(res.data)
+            
         }
         fetchBooks()
     }, [])
-
+    console.log(books)
     return (
         <div>
         </div>
